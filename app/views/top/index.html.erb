@@ -1,0 +1,50 @@
+<!-- ここにフラッシュメッセージを表示させると、エラーでない時も余白ができてしまう-->
+<section class="main-header">
+  <img src="<%= asset_path "achieve.png" %>">
+  <p><%= notice %></p><!-- 位置はここで良い？-->
+</section>
+<section class="about">
+  <h2>About Achieve</h2>
+  <p>
+    Achieveは、受講生のために作成された、教材用アプリです。<br>
+    Achieveを作り終えることで、SecondTeamに参加するための力を身につけることができます。
+  </p>
+  <p>
+    Archiveを一言で表すと、タスク管理アプリです。<br>
+    チームメンバーが、今どのようなタスクを行なっているかリアルタイムで把握することができます。
+  </p>
+</section>
+<div class="row">
+<section class="function container-fluid">
+  <h2>Function</h2>
+    <div class="function-images">
+      <div class="col-md-3 col-sm-6">
+        <div class="function-image">
+          <img src="<%= asset_path "key.png" %>">
+          <p>ログイン機能</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="function-image">
+          <img src="<%= asset_path "mails.png" %>">
+          <p>メール送信機能</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="function-image">
+          <img src="<%= asset_path "girls.png" %>">
+          <p>友達つながり機能</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="function-image">
+          <img src="<%= asset_path "comment.png" %>">
+          <p>コメント機能</p>
+        </div>
+      </div>
+    </div>
+</section>
+</div>
+<div id="page-top-btn" class="page-top-btn">
+  <p><a class="move-page-top" id="move-page-top">▲</a></p>
+</div>
