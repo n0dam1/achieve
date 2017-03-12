@@ -49,6 +49,5 @@ gem 'rails_12factor', group: :production
 
 gem 'devise'
 group :development do
-  gem 'letter_operner_web'
+  gem 'letter_opener_web'
 end
-
