@@ -5,6 +5,8 @@
       <%= profile_img(user) %>
       <%= user.email %>
       <%= render 'follow_form', user: user %>
+
+      <%= link_to '詳細', user_path(user.id) %>
     </div>
   <% end %>
 </div>

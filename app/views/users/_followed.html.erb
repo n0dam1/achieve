@@ -1,0 +1,5 @@
+<p>フォロワー</p>
+<% @user.followed_users.each do |user| %>
+    <%= user.email %>
+
+<% end %>
