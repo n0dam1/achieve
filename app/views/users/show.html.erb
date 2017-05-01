@@ -1,12 +1,9 @@
 <div class="container">
-  <div class="wrapper col-md-4 col-md-offset-4 col-sm-10">
-    <h2>ユーザーページ</h2>
-
+  <div class="row">
+    <h3><strong><%= @user.name %></strong></h3>
+    <p><%= profile_img(@user) %></p>
     <p><%= @user.email %></p>
-
+  </div>
     <%= render 'follower' %>
     <%= render 'followed' %>
-
-    <%= link_to "Back", :back %>
-  </div>
 </div>
