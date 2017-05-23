@@ -15,8 +15,11 @@
   });
 
   var channel = pusher.subscribe("user_<%= current_user.id %>_channel");
-  channel.bind('comment_created', function(data){
+  channel.bind('comment_created', function(data) {
     alert(data.message);
+  });
+  channel.bind('notification_created', function(data) {
+    $('#unread_count').html(data.unread_counts)
   });
   </script>
   <% end %>
@@ -53,8 +56,8 @@
               <li><%= link_to 'マイページ', edit_user_registration_path %></li>
               <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
               <li>
-              <%= link_to notifications_index_path do %>
-                <i class="fa fa-bell fa-1x"><%= @notifications_count %></i>
+              <%= link_to notifications_index_path, class: "navbar-brand" do %>
+                <i class="fa fa-bell fa-1x"><span id="unread_count"><%= @notifications_count %></span> </i>
               <% end %>
               </li>
               <% else %>
