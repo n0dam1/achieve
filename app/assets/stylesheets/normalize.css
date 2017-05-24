@@ -421,3 +421,10 @@ textarea {
 img {
   max-width: 100%;
 }
+
+/*リストのマークを消します*/
+ul,
+ol,
+li {
+	list-style-type: none;
+}

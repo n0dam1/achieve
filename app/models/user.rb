@@ -20,7 +20,7 @@ class User < ActiveRecord::Base
 
     unless user
       user = User.new(
-        name: auth.extra.raw_info_name,
+        name: auth.extra.raw_info.name,
         provider: auth.provider,
         uid: auth.uid,
         email: auth.info.email ||= "#{auth.uid}-#{auth.provider}@example.com",
