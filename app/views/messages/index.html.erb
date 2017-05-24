@@ -27,7 +27,7 @@
   </div>
     <%= f.text_field :user_id, value: current_user.id, type: "hidden"  %>
   <div>
-    <%= f.submit "メッセージを送る" %>
+    <%= f.submit "メッセージを送る", class: "btn btn-default" %>
   </div>
 
 <% end %>
