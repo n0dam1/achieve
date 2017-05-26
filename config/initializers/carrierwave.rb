@@ -16,6 +16,6 @@ CarrierWave.configure do |config|
     config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/mnachieve-production'
   when 'development'
     config.fog_directory = 'mnachieve-development'
-    config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/開発環境用のバケット名'
+    config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/mnachieve-development'
   end
 end
