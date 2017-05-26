@@ -6,7 +6,7 @@
       <div class="row">
       <%= profile_img(user) %>
       <br>
-      <%= user.email %>
+      <%= truncate(user.email, length: 20) %>
       <% if user.id != current_user.id %>
         <li class="user_index">
           <div class="item">
