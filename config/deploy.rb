@@ -10,21 +10,21 @@ set :repo_url, 'https://github.com/n0dam1/achieve'
 set :branch, ENV['BRANCH'] || 'master'
 
 # deploy先のディレクトリ。
-set :deploy_to, '/var/www/achieve'
+set :deploy_to, '/var/xxx/achieve'
 
 # シンボリックリンクをはるフォルダ・ファイル
 set :linked_files, %w{.env config/secrets.yml}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
 
 # 保持するバージョンの個数
-set :keep_releases, 5
+set :keep_releases, 1
 
 # Rubyのバージョン
 set :rbenv_ruby, '2.3.0'
 set :rbenv_type, :system
 
 # 出力するログのレベル。
-set :log_level, :debug
+set :log_level, :fatal
 
 namespace :deploy do
   desc 'Restart application'
