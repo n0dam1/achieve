@@ -10,7 +10,7 @@ set :repo_url, 'https://github.com/n0dam1/achieve'
 set :branch, ENV['BRANCH'] || 'master'
 
 # deploy先のディレクトリ。
-set :deploy_to, '/var/xxx/achieve'
+set :deploy_to, '/var/www/hogehoge'
 
 # シンボリックリンクをはるフォルダ・ファイル
 set :linked_files, %w{.env config/secrets.yml}
